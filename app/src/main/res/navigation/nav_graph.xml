@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.roomdao.presentation.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_universitiesListFragment"
+            app:destination="@id/universitiesListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_departmentsListFragment"
+            app:destination="@id/departmentsListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_facultiesListFragment"
+            app:destination="@id/facultiesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universitiesListFragment"
+        android:name="com.example.roomdao.presentation.universities_list.UniversitiesListFragment"
+        android:label="UniversitiesListFragment" >
+        <action
+            android:id="@+id/action_universitiesListFragment_to_fragmentUniversityAdd"
+            app:destination="@id/fragmentUniversityAdd" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUniversityAdd"
+        android:name="com.example.roomdao.presentation.university_add.FragmentUniversityAdd"
+        android:label="FragmentUniversityAdd" />
+    <fragment
+        android:id="@+id/departmentsListFragment"
+        android:name="com.example.roomdao.presentation.departments_list.DepartmentsListFragment"
+        android:label="DepartmentsListFragment" >
+        <action
+            android:id="@+id/action_departmentsListFragment_to_departmentMemberFragment"
+            app:destination="@id/departmentMemberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/departmentMemberFragment"
+        android:name="com.example.roomdao.presentation.department_member_list.DepartmentMemberFragment"
+        android:label="DepartmentMemberFragment" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_departmentMemberFragment"
+        app:destination="@id/departmentMemberFragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </action>
+    <fragment
+        android:id="@+id/facultiesListFragment"
+        android:name="com.example.roomdao.presentation.faculties_list.FacultiesListFragment"
+        android:label="FacultiesListFragment" />
+</navigation>

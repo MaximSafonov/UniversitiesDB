@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RoomDao</string>
+    <string name="universities">Universities</string>
+    <string name="faculties">faculties</string>
+    <string name="departments">departments</string>
+    <string name="rank">Ранг</string>
+    <string name="add_university">addUniversity</string>
+    <string name="add">ДОБАВИТЬ</string>
+    <string name="name">Название</string>
+    <string name="city">Город</string>
+    <string name="specialization">Специализация</string>
+    <string name="university_rank">Ранг университета</string>
+    <string name="role">Должность</string>
+    <string name="name_surname">Фамилия Имя</string>
+    <string name="alias">Наименование</string>
+    <string name="spec">Специализация</string>
+</resources>

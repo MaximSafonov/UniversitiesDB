@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="4dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape_cell_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="@string/name"
+        tools:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="@string/universities"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityCityText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/universityNameText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/universityName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="@string/universities"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universitySpecText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/universityCityText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universitySpecialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/universityCity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="@string/universities"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityRankText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/universitySpecText"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/universityRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/rank"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="@string/app_name"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="126dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
